@@ -1,5 +1,5 @@
 # Ubuntu Server Essentials
-A collection of scripts intedned to simplify setting up and maintianing an Ubuntu server 
+A collection of scripts intended to simplify setting up and maintianing an Ubuntu server 
 
 ## Scripts
 [Docker](Docker.sh) - Install Docker  
