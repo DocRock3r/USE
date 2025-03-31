@@ -2,5 +2,5 @@
 A collection of scripts intedned to simplify setting up and maintianing an Ubuntu server 
 
 ## Scripts
-[Docker](Docker.sh) - Install Docker  
-[Portainer](Portainer.sh) - Install Docker and Portainer Server
+[Docker](Scripts/Docker.sh) - Install Docker  
+[Portainer](Scripts/Portainer.sh) - Install Docker and Portainer Server
