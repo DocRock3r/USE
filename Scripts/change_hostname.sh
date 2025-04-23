@@ -7,7 +7,7 @@ old_host=$(hostname)
 
 #make backups for hostname and hosts files
 cp /etc/hostname /etc/hostname.bk
-cd /etc/hosts /etc/hosts.bk
+cp /etc/hosts /etc/hosts.bk
 
 #ask user for new host name and set it as value for new_host
 printf "%s\n" "Hostname must be between 1-63 characters long"
