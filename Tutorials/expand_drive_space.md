@@ -7,17 +7,17 @@ use `F` to list free space on drive
 use `n` to create a new partion  
 use `w` to save changes  
 
-## 2. Add new partion to existing lvm  
-- use `lsblk` to list all drives, partitions, and lvms  
-### 2.1 Create a new physical volume(pv)  
+## 2. Add new partion to existing LVM  
+- use `lsblk` to list all drives, partitions, and LVMs  
+### 2.1 Create a new physical volume (pv)  
 - `sudo pvcreate /dev/[partiton you want to use]`  
     - ex. `sudo pvcreate /dev/sda4`  
-### 2.2 Identify the volume group(vg) you want to use  
+### 2.2 Identify the volume group (vg) you want to use  
 - you can use `sudo vgs` to list all available volume groups  
 ### 2.3 Extend volume group  
 - `sudo vgextend [volume group] /dev/[partition]`  
     - ex. `sudo vgextend ubuntu-vg /dev/sda4`  
-### 2.4 Identify the logical volume(lv) you want to use  
+### 2.4 Identify the logical volume (lv) you want to use  
 - you can use `sudo lvs` to list all available logical volumes  
 ### 2.5 Extend logical volume  
 - `sudo lvextend -l +100%FREE /dev/[volume group]/[logical volume]`  
@@ -37,6 +37,6 @@ use `w` to save changes
 2. `sudo resize2fs /dev/[partition]`  
     - ex. `sudo resize2fs /dev/sda3`  
 
-# Expand existing lvm to use whole partition  
+# Expand existing LVM to use whole partition  
 - `sudo lvextend -l +100%FREE /dev/[volume group]/[logical volume]`  
     - ex. `sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv`  
