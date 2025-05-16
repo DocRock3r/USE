@@ -9,4 +9,5 @@ A collection of scripts and tutorials intended to simplify setting up and mainti
 [Change Hostname](Scripts/change_hostname.sh) - Change the hostname for the system  
 
 ## Tutorials
-[Expand Drive Space](Tutorials/expand_drive_space.md)
+[Expand Drive Space](Tutorials/expand_drive_space.md)  
+[Mount Drive At Boot](Tutorials/automount_drive_at_boot.md)
