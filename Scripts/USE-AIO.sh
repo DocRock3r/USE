@@ -4,11 +4,12 @@ clear
 echo "What do you want to do?"
 echo "1. Install Docker"
 echo "2. Install Docker + Portainer Server"
-echo "3. Update System"
-echo "4. Change Hostname"
-echo "5. Exit"
+echo "3. Install Docker + Portianer Agent"
+echo "4. Update System"
+echo "5. Change Hostname"
+echo "00. Exit"
 echo ""
-echo -n "enter your selection(1-4)(5 to exit): " 
+echo -n "enter your selection(1-5)(00 to exit): " 
 
 while :
 do
@@ -128,6 +129,6 @@ esac
 
 echo ""
 echo ""
-echo -n "enter your selection(1-4)(5 to exit): " 
+echo -n "enter your selection(1-5)(00 to exit): " 
 
 done
