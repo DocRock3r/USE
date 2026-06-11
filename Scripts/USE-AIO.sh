@@ -86,13 +86,13 @@ case $choice in
     echo "Done" ;;
 
 4)  echo "Updating repository..."
-    sudo apt-get update 1>/dev/null
+    sudo apt-get update
     echo "Done"
     echo "Installing updates..."
-    sudo apt-get upgrade -y 1>/dev/null
+    sudo apt-get upgrade -y
     echo "Done"
     echo "Cleaning up unused packages..."
-    sudo apt-get autoremove -y 1>/dev/null
+    sudo apt-get autoremove -y
     echo "Done" ;;
 
 5)  echo ""
